@@ -22,9 +22,9 @@ const middle = function(array) {
   if (array.length <= 2) { // first case if <= 2 indices
     return result;
   }
-  if (array.length % 2) { // second case if > 2 indices && even numbered indices in the array
+  if (array.length % 2) { // second case if > 2 indices && odd numbered indices in the array
     result.push(array[midInd]);
-  } else { // third case if > 2 indices && odd numbered indices in the array
+  } else { // third case if > 2 indices && even numbered indices in the array
     result.push((array[midInd - 1]), array[midInd]);
   } return result;
 };
